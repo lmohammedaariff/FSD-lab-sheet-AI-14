@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Tasks</title>
+</head>
+<body>
+
+<h1>JavaScript</h1>
+
+<script>
+
+// Task 1 - Proper Number Addition
+let x = 10;
+let y = "20";
+
+let result = x + Number(y);   // Convert string to number
+console.log("Addition:", result);
+
+
+// Task 2 - Check Positive/Negative/Zero
+let num = 9;
+
+if (num < 0) {
+    console.log(num + " is Negative");
+} else if (num > 0) {
+    console.log(num + " is Positive");
+} else {
+    console.log("Zero");
+}
+
+
+// Task 3 - Object Access
+const student = {
+    name: "Anil",
+    rollNo: 23,
+    marks: 85
+};
+
+console.log("Student name:", student.name);
+console.log("Student marks:", student.marks);
+
+
+// Task 4 - Print Array Elements
+let arr = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+
+// Task 5 - Count Odd and Even Numbers
+let ar = [3, 10, 20, 30, 40, 50];
+let countOdd = 0;
+let countEven = 0;
+
+for (let i = 0; i < ar.length; i++) {
+    if (ar[i] % 2 === 0) {
+        countEven++;
+    } else {
+        countOdd++;
+    }
+}
+
+console.log("Count of odd numbers:", countOdd);
+console.log("Count of even numbers:", countEven);
+
+</script>
+
+</body>
+</html>
